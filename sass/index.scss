@@ -1,0 +1,217 @@
+// 回到顶部按钮
+.go-top{
+    position:fixed;
+    bottom:15%;
+    right:4%;
+    display:none;
+    .go-top-btn{
+        display:inline-block;
+        text-align:center;
+        width: 1.4rem;
+
+
+        
+        height:1.4rem;
+        border-radius:4px;
+        border:1px solid #f1f1f1;
+        background:#fff;
+        font-size:1rem;
+        color:#ccc;
+        &:hover{
+            color:#333;
+        }
+    }
+}
+
+// jk-docs-nav
+
+.jk-docs-nav{
+    background:#fff;
+    margin-bottom:0;
+    a {
+        color:#563d7c;
+        font-weight:500;
+    }
+    .navbar-header{
+        .navbar-brand {
+            padding-top: 10px;
+            img {
+                width: 100px;
+                height: 30px;
+            }
+        }
+        .navbar-toggle{
+            border-color:#ddd;
+            .icon-bar{
+                background:#563d7c;
+            }
+        }
+    }
+    .navbar-collapse{
+        .navbar-nav{
+            padding-left: 160px;
+            li {
+                width: 90px;
+                text-align: center;
+            }
+            li.active{
+                background: #142952;
+                a{
+                    color: #fff;
+                    &:hover{
+                        color:#463265;
+                        background:#f9f9f9;
+                    }
+                }
+            }
+        }
+    }
+}
+// 呼吸灯
+
+.jk-docs-carousel{
+    position:relative;
+    .slider {
+        .item {
+            display: block;
+        }
+    }
+    &:hover{
+        .arrow{
+            display:block;
+        }
+    }
+}
+
+.slider{
+    width:100%;
+    height: 480px;
+    overflow:hidden;
+    position:relative;
+    li{
+        position:absolute;
+        width: 100%;
+        float: left;
+        height:100%;
+        img{
+            width:100%;
+            height:100%;
+        }
+        &:first-child{
+            display:block;
+        }
+    }
+}
+
+// 箭头
+
+.arrow{
+    display:none;
+    span.glyphicon{
+        position:absolute;
+        top: 50%;
+        transform:translateY(-50%);
+        background:rgba(255,255,255,.5);
+        width:2rem;
+        height:2rem;
+        text-align:center;
+        padding: 0.8rem 0;
+    }
+    .arrow-left{
+        left:1rem;
+    }
+    .arrow-right{
+        right:1rem;
+    }
+}
+
+// banner-nav
+.banner-nav {
+    width: 88%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform:translateX(-50%);
+    .small-image {
+        .item {
+            padding-right: 0;
+            a {
+                display: block;
+                height: 90px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+// 卡片式内容
+.module {
+    margin: 30px auto;
+    >div {
+        margin-bottom: 40px;
+    }
+    .card {
+        background: #fff;
+        border-radius: 4px;
+        -moz-box-shadow: 1px 1px 12px 0.03px #888888; /* 老的 Firefox */
+        box-shadow: 1px 1px 12px 0.03px #888888;
+        padding: 0 0 14px;
+        overflow: hidden;
+        .header-img {
+            display: block;
+            width: 100%;
+            height: 130px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .content {
+            padding: 10px 20px;
+            height: 190px;
+            font-size: small;
+            .title {
+                margin-bottom: 40px;
+            }
+        }
+        .more {
+            display: block;
+            width: 100px;
+            padding: 5px 0;
+            text-align: center;
+            margin: 0 auto;
+            background: #f0f0f0;
+            color: #343434;
+            text-decoration: none;
+            -webkit-transition: all 0.5s ease-in-out;
+               -moz-transition: all 0.5s ease-in-out;
+                -ms-transition: all 0.5s ease-in-out;
+                 -o-transition: all 0.5s ease-in-out;
+                    transition: all 0.5s ease-in-out;
+            &:hover {
+                background: #142952;
+                color: #fff;
+            }
+        }
+        &:hover {
+            -moz-box-shadow: 1px 1px 14px 3px #888888; /* 老的 Firefox */
+            box-shadow: 1px 1px 14px 3px #888888;
+        }
+    }
+}
+
+// 底部
+.footer {
+    background: #d19957;
+    width: 100%;
+    color: #e9ded1;
+    height: 100px;
+    margin-top: 60px;
+    text-align: center;
+    padding-top: 20px;
+}
+
